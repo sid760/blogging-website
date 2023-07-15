@@ -11,16 +11,34 @@ img{
     max-width: 100%;
 }
 main{
-    padding: 10px;
+    /*padding: 10px;*/
     max-width: 960px;
     margin: 0 auto;
+    padding-top: 10rem;
+}
+
+.navbar {
+    /*border: 2px solid red;*/
+    width: 100%;
+    position: fixed;
+    background: white;
+    padding: 15px 50px 15px 50px;
+    z-index: 100;
+    align-items: center;
+    max-height: 200px;
+}
+
+.navbar.shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 header{
     display:flex;
     justify-content:space-between;
-    margin-top: 20px;
-    margin-bottom: 50px;
     align-items: center;
+    overflow: hidden;
+    /*debug:*/
+    /*transform: translate(0, 40%);*/
+    /*background-color: #aaa;*/
 }
 header a{
     text-decoration:none;
@@ -28,7 +46,7 @@ header a{
 }
 header a.logo{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
 }
 header nav{
     display:flex;
@@ -74,6 +92,12 @@ div.post p.summary{
 form.login, form.register{
     max-width: 400px;
     margin: 0 auto;
+    line-height: 50px;
+    padding: 40px;
+}
+
+form.login input {
+    margin: 1rem 0;
 }
 input{
     display: block;
@@ -83,9 +107,11 @@ input{
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #fff;
+    scale: 1.20;
+    height: 2.5rem;
 }
 button{
-    cursor: pointer;
+
     width: 100%;
     display: block;
     background-color: #555;
@@ -93,6 +119,14 @@ button{
     color: #fff;
     border-radius: 5px;
     padding: 7px 0;
+    scale: 1.20;
+    margin-top: 20px;
+    height: 2.2rem;
+}
+
+button:hover {
+    cursor: wait !important;
+    background: #888;
 }
 form.login h1, form.register h1{
     text-align: center;
