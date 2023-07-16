@@ -1,6 +1,9 @@
 import {useContext, useState} from "react";
 import {Navigate} from "react-router-dom";
 import {UserContext} from "../UserContext";
+import React from "react";
+import Lottie from "lottie-react";
+// import groovyWalkAnimation from "./groovyWalk.json";
 
 export default function LoginPage() {
   const [username,setUsername] = useState('');
