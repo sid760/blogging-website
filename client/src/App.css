@@ -125,7 +125,7 @@ button{
 }
 
 button:hover {
-    cursor: wait !important;
+    cursor: pointer !important;
     background: #888;
 }
 form.login h1, form.register h1{
