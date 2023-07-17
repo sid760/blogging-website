@@ -94,6 +94,9 @@ form.login, form.register{
     margin: 0 auto;
     line-height: 50px;
     padding: 40px;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
 }
 
 form.login input {
@@ -130,6 +133,12 @@ button:hover {
 }
 form.login h1, form.register h1{
     text-align: center;
+    background-color:rgba(255, 255, 255);
+    color:black;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 div.post-page div.image{
@@ -186,4 +195,16 @@ div.post-page a.edit-btn{
 }
 a svg{
     height:20px;
+}
+
+.anime{
+/* width: 100% ;                                                         */
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    scale: 1.25;
+    z-index: -1;
+    background-size: cover;
+
 }
