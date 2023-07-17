@@ -103,15 +103,23 @@ form.login, form.register{
     justify-content: center;
     z-index: 1;
     /*exp*/
-    background: white;
+    background: #fff;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 0 0 1px 2px white;
-    padding: 40px 50px;
+    padding: 20px 50px 40px 50px;
 }
 
 form.login input, form.register input {
     margin: 1rem 0;
+}
+form.login h1, form.register h1{
+    text-align: center;
+    background-color:rgba(255, 255, 255);
+    color:black;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
 }
 input{
     display: block;
@@ -142,16 +150,6 @@ button:hover {
     cursor: pointer !important;
     background: #888;
 }
-form.login h1, form.register h1{
-    text-align: center;
-    background-color:rgba(255, 255, 255);
-    color:black;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 10px;
-    margin: 0 auto;
-}
-
 div.image img{
     max-height: 250px;
     min-height: 10px;
