@@ -112,6 +112,11 @@ form.login, form.register{
 
 form.login input, form.register input {
     margin: 1rem 0;
+    scale: 1.2;
+}
+
+form.login button, form.register input {
+    scale: 1.2;
 }
 form.login h1, form.register h1{
     text-align: center;
@@ -129,11 +134,10 @@ input{
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #fff;
-    scale: 1.20;
+    /*scale: 1.20;*/
     height: 2.5rem;
 }
 button{
-
     width: 100%;
     display: block;
     background-color: #555;
@@ -141,14 +145,19 @@ button{
     color: #fff;
     border-radius: 5px;
     padding: 7px 0;
-    scale: 1.20;
+    /*scale: 1.20;*/
     margin-top: 20px;
     height: 2.2rem;
 }
 
+
+
 button:hover {
     cursor: pointer !important;
     background: #888;
+}
+div.edit-post{
+    border: 2px solid red;
 }
 div.image img{
     max-height: 250px;
