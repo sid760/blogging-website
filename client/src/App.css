@@ -57,7 +57,7 @@ div.post{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 @media screen and (min-width: 700px) {
     div.post{
@@ -87,6 +87,11 @@ div.post p.info a.author{
 div.post p.summary{
     margin:10px 0;
     line-height: 1.8rem;
+}
+
+div.indexPage hr {
+    margin-bottom: 2rem;
+    width: 70%;
 }
 
 form.login, form.register{
@@ -141,14 +146,23 @@ form.login h1, form.register h1{
     margin: 0 auto;
 }
 
+div.image img{
+    max-height: 250px;
+    min-height: 10px;
+    object-fit: cover;
+    width: 100%;
+}
 div.post-page div.image{
-    max-height:300px;
+    max-height:400px;
     display: flex;
     overflow:hidden;
+    justify-content: center;
 }
 div.post-page div.image img{
-    object-fit: cover;
-    object-position: center center;
+    object-fit: contain;
+    /*object-position: center center;*/
+    /*width: 100%;*/
+    height: auto;
     width: 100%;
 }
 div.post-page a{
