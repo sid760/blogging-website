@@ -98,13 +98,19 @@ form.login, form.register{
     max-width: 400px;
     margin: 0 auto;
     line-height: 50px;
-    padding: 40px;
+    /*padding: 40px;*/
     text-align: center;
     justify-content: center;
     z-index: 1;
+    /*exp*/
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px white;
+    padding: 40px 50px;
 }
 
-form.login input {
+form.login input, form.register input {
     margin: 1rem 0;
 }
 input{
@@ -212,7 +218,7 @@ a svg{
 }
 
 .anime{
-/* width: 100% ;                                                         */
+/* width: 100% ;*/
     height: 100vh;
     position: fixed;
     top: 0;
@@ -220,5 +226,4 @@ a svg{
     scale: 1.25;
     z-index: -1;
     background-size: cover;
-
 }
