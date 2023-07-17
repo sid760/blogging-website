@@ -12,8 +12,3 @@ Blogs can contain images and it also supports different text formatting options.
 ## Organisation
 - api contains the server and connection to atlas mongodb database
 - client contains client side code
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 82de072ab8068c341b5b65cb6d762631fde12bc3
