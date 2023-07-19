@@ -43,15 +43,66 @@ header{
 header a{
     text-decoration:none;
     color: inherit;
+    /*border: 2px solid red;*/
 }
 header a.logo{
     font-weight: bold;
     font-size: 1.9rem;
 }
+
+/*This is being replaced by logo animation*/
+/*header a.logo:hover {*/
+/*    text-decoration: underline;*/
+/*}*/
+
+div.logo-container {
+    /*border: 2px solid red;*/
+}
+
+div.logo-animation {
+    /*height: auto;*/
+    width: 6rem;
+    max-height: 1rem;
+    /*border: 2px solid red;*/
+    transform: translate(0, -50%);
+    z-index: -1;
+    /*float: right;*/
+    padding: 0;
+    margin: 0;
+}
 header nav{
     display:flex;
     gap: 24px;
 }
+
+.logo {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    color: #ff0000; /* Change the color when hovered over */
+}
+
+.logo:hover::after {
+    transform: scaleX(1);
+}
+
 
 div.post{
     display: grid;
@@ -157,7 +208,7 @@ button:hover {
     background: #888;
 }
 div.edit-post{
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 div.image img{
     max-height: 250px;
@@ -200,7 +251,7 @@ div.post-page div.author{
     font-weight: bold;
 }
 div.content {
-    border: 2px solid #ddd;
+    /*border: 2px solid #ddd;*/
     border-radius: 5px;
 }
 form.create-post, form.edit-post {
