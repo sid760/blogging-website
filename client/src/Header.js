@@ -20,7 +20,9 @@ export default function Header() {
 
   useEffect(() => {
     const animation = lottie.loadAnimation({
-      container: animate.current, animationData: animationData, renderer: 'svg', // or 'canvas', 'html', 'svg'
+      container: animate.current,
+      animationData: animationData,
+      renderer: 'svg', // or 'canvas', 'html', 'svg'
       loop: false, // set to true or false
       autoplay: false, // set to true or false
     });
