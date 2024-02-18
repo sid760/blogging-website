@@ -14,12 +14,12 @@ const fs = require('fs');
 const salt = bcrypt.genSaltSync(10);
 const secret = 'asdfe45we45w345wegw345werjktjwertkj';
 
-app.use(cors({credentials:true,origin:'http://localhost:3000'}));
+app.use(cors({credentials:true, origin:'http://localhost:3000'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-mongoose.connect('`mongodb+srv://blog:vzOjYAFFQIeKhgsV@cluster0.j1hv8d3.mongodb.net/?retryWrites=true&w=majority`');
+mongoose.connect('mongodb+srv://blog:vzOjYAFFQIeKhgsV@cluster0.j1hv8d3.mongodb.net/?retryWrites=true&w=majority'  );
 
 app.post('/register', async (req,res) => {
   const {username,password} = req.body;
@@ -134,5 +134,7 @@ app.get('/post/:id', async (req, res) => {
   res.json(postDoc);
 })
 
-app.listen(4000);
+app.listen(4000, ()=>{
+  console.log('Server listening on port 4000..');
+});
 //
